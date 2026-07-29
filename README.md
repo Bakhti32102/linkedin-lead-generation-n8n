@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="assets/banner.png" alt="LinkedIn Lead Generation Banner" width="100%">
+  <img src="banner.png" alt="LinkedIn Lead Generation Banner" width="100%">
 </p>
 
 # 💼 LinkedIn Lead Generation - n8n Workflow
 
 An open-source LinkedIn job lead generation workflow built with **n8n**, **Apify**, and **Gmail**.
 
-This workflow automatically scrapes LinkedIn job listings, filters the latest opportunities, and sends daily email notifications so you never miss new AI automation and remote job postings.
+This workflow automatically scrapes LinkedIn job listings, filters the latest opportunities, and sends daily email notifications so you never miss AI Automation, Customer Support, and Remote job opportunities.
 
 ---
 
@@ -25,7 +25,7 @@ This workflow automatically scrapes LinkedIn job listings, filters the latest op
 # 📷 Workflow Preview
 
 <p align="center">
-  <img src="assets/workflow.png" alt="Workflow Preview" width="100%">
+  <img src="screenshots/workflow.png" alt="Workflow Preview" width="100%">
 </p>
 
 ---
@@ -36,7 +36,7 @@ This workflow automatically scrapes LinkedIn job listings, filters the latest op
 - Apify
 - LinkedIn Jobs
 - Gmail
-- HTTP Request Node
+- HTTP Request
 - Schedule Trigger
 
 ---
@@ -49,53 +49,65 @@ This workflow automatically scrapes LinkedIn job listings, filters the latest op
 4. Select **workflow.json**.
 5. Configure your credentials:
    - Apify API Token
-   - Gmail OAuth
-6. Update the LinkedIn search URL if needed.
+   - Gmail OAuth2
+6. Update your LinkedIn Job Search URL.
 7. Activate the workflow.
 
 ---
 
 # 📁 Repository Structure
 
-```
+```text
 linkedin-lead-generation-n8n/
 │
 ├── workflow.json
 ├── README.md
 ├── LICENSE
-└── assets/
-    ├── banner.png
-    └── workflow.png
+├── banner.png
+└── screenshots/
+      └── workflow.png
 ```
 
 ---
 
 # 🔄 Workflow Process
 
-1. Schedule Trigger starts automatically.
-2. Apify scrapes LinkedIn jobs.
-3. Workflow waits for scraping to finish.
-4. Fetches job results.
-5. Limits results to the latest 10 jobs.
-6. Sends job details via Gmail.
+```text
+Schedule Trigger
+        │
+        ▼
+Run Apify LinkedIn Job Scraper
+        │
+        ▼
+Wait for Scraper
+        │
+        ▼
+Fetch Dataset Results
+        │
+        ▼
+Limit Results (Top 10)
+        │
+        ▼
+Send Email Notifications
+```
 
 ---
 
-# 📧 Email Example
+# 📧 Email Notification
 
-Subject
+**Subject**
 
-```
+```text
 New Job: AI Customer Support at Company Name
 ```
 
-Body
+**Email Body**
 
-```
-Job Title
-Company
-Location
-Apply Link
+```text
+Job Title:
+Company:
+Location:
+Apply Link:
 ```
 
 ---
@@ -109,14 +121,39 @@ Apply Link
 
 ---
 
+# 🚀 Use Cases
+
+- AI Automation Jobs
+- Customer Support Jobs
+- Remote Jobs
+- LinkedIn Job Alerts
+- Daily Lead Generation
+- Job Monitoring
+
+---
+
 # 🤝 Contributing
 
-Contributions, improvements, and feature requests are welcome.
+Contributions, feature requests, and improvements are welcome.
 
-If you like this project, consider giving it a ⭐ on GitHub.
+If you find this project useful, don't forget to ⭐ star this repository.
 
 ---
 
 # 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
+
+---
+
+# 👨‍💻 Author
+
+**Muhammad Habib**
+
+AI Automation Developer
+
+GitHub:
+https://github.com/Bakhti32102
+
+LinkedIn:
+https://www.linkedin.com/in/muhammad-habib/
